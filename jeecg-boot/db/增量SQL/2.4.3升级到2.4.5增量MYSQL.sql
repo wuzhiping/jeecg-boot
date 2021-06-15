@@ -13,8 +13,6 @@ ADD COLUMN `third_user_id`  varchar(100) NULL COMMENT '第三方app用户账号'
 
 --  新增第三方APP消息测试菜单
 INSERT INTO `sys_permission` (`id`, `parent_id`, `name`, `url`, `component`, `is_route`, `component_name`, `redirect`, `menu_type`, `perms`, `perms_type`, `sort_no`, `always_show`, `icon`, `is_leaf`, `keep_alive`, `hidden`, `description`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `rule_flag`, `status`, `internal_or_external`) VALUES ('1387612436586065922', '2a470fc0c3954d9dbb61de6d80846549', '第三方APP消息测试', '/jeecg/ThirdAppMessageTest', 'jeecg/ThirdAppMessageTest', '1', NULL, NULL, '1', NULL, '1', '3', '0', NULL, '1', '0', '0', NULL, 'admin', '2021-04-29 11:39:20', 'admin', '2021-04-29 11:39:27', '0', '0', '1', '0');
---  新增监控在线用户
-INSERT INTO `sys_permission` (`id`, `parent_id`, `name`, `url`, `component`, `is_route`, `component_name`, `redirect`, `menu_type`, `perms`, `perms_type`, `sort_no`, `always_show`, `icon`, `is_leaf`, `keep_alive`, `hidden`, `description`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `rule_flag`, `status`, `internal_or_external`) VALUES ('1402436404646010882', '08e6b9dc3c04489c8e1ff2ce6f105aa4', '在线用户', '/isystem/online', 'system/SysOnlineList', NULL, NULL, 1, NULL, '1', 1.00, 0, NULL, 1, 1, 0, 0, NULL, 'admin', '2021-06-09 09:24:30', 'admin', '2021-06-09 09:37:20', 0, 0, '1', 0);
 
 -- 定时任务：一个类允许配置多个调度
 -- 删除定时任务表唯一索引
