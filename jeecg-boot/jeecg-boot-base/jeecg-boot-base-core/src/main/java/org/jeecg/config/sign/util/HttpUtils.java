@@ -1,10 +1,5 @@
 package org.jeecg.config.sign.util;
 
-import com.alibaba.fastjson.JSONObject;
-import org.jeecg.common.util.oConvertUtils;
-import org.springframework.http.HttpMethod;
-
-import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -15,12 +10,21 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
+import javax.servlet.http.HttpServletRequest;
+
+import lombok.extern.slf4j.Slf4j;
+import org.jeecg.common.util.oConvertUtils;
+import org.springframework.http.HttpMethod;
+
+import com.alibaba.fastjson.JSONObject;
+
 /**
  * http 工具类 获取请求中的参数
  *
  * @author jeecg
  * @date 20210621
  */
+@Slf4j
 public class HttpUtils {
 
     /**
@@ -36,7 +40,10 @@ public class HttpUtils {
         // 获取URL上最后带逗号的参数变量 sys/dict/getDictItems/sys_user,realname,username
         String pathVariable = request.getRequestURI().substring(request.getRequestURI().lastIndexOf("/") + 1);
         if (pathVariable.contains(",")) {
-            result.put(SignUtil.xPathVariable, pathVariable);
+            log.info(" pathVariable: {}",pathVariable);
+            String deString = URLDecoder.decode(pathVariable, "UTF-8");
+            log.info(" pathVariable decode: {}",deString);
+            result.put(SignUtil.xPathVariable, deString);
         }
         // 获取URL上的参数
         Map<String, String> urlParams = getUrlParams(request);
@@ -71,7 +78,10 @@ public class HttpUtils {
         // 获取URL上最后带逗号的参数变量 sys/dict/getDictItems/sys_user,realname,username
         String pathVariable = url.substring(url.lastIndexOf("/") + 1);
         if (pathVariable.contains(",")) {
-            result.put(SignUtil.xPathVariable, pathVariable);
+            log.info(" pathVariable: {}",pathVariable);
+            String deString = URLDecoder.decode(pathVariable, "UTF-8");
+            log.info(" pathVariable decode: {}",deString);
+            result.put(SignUtil.xPathVariable, deString);
         }
         // 获取URL上的参数
         Map<String, String> urlParams = getUrlParams(queryString);
