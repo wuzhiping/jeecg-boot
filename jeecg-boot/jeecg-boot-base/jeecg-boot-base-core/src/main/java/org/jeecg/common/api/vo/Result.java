@@ -103,6 +103,7 @@ public class Result<T> implements Serializable {
 		return r;
 	}
 
+	@Deprecated
 	public static<T> Result<T> OK(String msg) {
 		Result<T> r = new Result<T>();
 		r.setSuccess(true);
@@ -157,6 +158,7 @@ public class Result<T> implements Serializable {
 		this.success = false;
 		return this;
 	}
+
 	/**
 	 * 无权限访问返回结果
 	 */
