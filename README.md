@@ -57,7 +57,7 @@ Jeecg-Boot低代码开发平台，可以应用在任何J2EE项目的开发中，
 
 - 更新日志：  [版本日志](http://www.jeecg.com/doc/log)
 
-- VUE3版演示(未正式发布)：[http://boot3.jeecg.com](http://boot3.jeecg.com
+- VUE3版演示(未正式发布)：[http://boot3.jeecg.com](http://boot3.jeecg.com)
 
 
 
