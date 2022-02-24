@@ -40,7 +40,6 @@
     "@toast-ui/editor": "^2.1.2",
     "vue-area-linkage": "^5.1.0",
     "china-area-data": "^5.0.1",
-    "vue-pop-colorpicker": "^1.0.2",
     "dom-align": "1.12.0",
     "xe-utils": "2.4.8",
     "vxe-table": "2.9.13",
