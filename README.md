@@ -47,17 +47,13 @@ Jeecg-Boot低代码开发平台，可以应用在任何J2EE项目的开发中，
 
 - 在线演示 ： [http://boot.jeecg.com](http://boot.jeecg.com)
 
-- 开发文档：  [http://doc.jeecg.com](http://doc.jeecg.com)
+- 开发文档：  [http://doc.jeecg.com](http://doc.jeecg.com/2043874)
 
-- 视频教程  ：[JeecgBoot入门视频](http://www.jeecg.com/doc/video)
+- 新手指南： [快速入门](http://www.jeecg.com/doc/quickstart)  |   [常见问题 ](http://www.jeecg.com/doc/qa)  |   [入门视频](https://www.bilibili.com/video/BV1Y541147m1) |   [技术支持](http://jeecg.com/doc/help) |  [1分钟体验低代码](https://my.oschina.net/jeecg/blog/3083313)
 
-- 微服务启动：  [单体升级为微服务启动文档2.4+](http://doc.jeecg.com/2043906)
+- 微服务开发：  [单体切换为微服务](http://doc.jeecg.com/2043906)
 
-- 常见问题：  [入门常见问题Q&A](http://jeecg.com/doc/qa)
-
-- 更新日志：  [版本日志](http://www.jeecg.com/doc/log)
-
-
+- QQ交流群 ： ⑤860162132、683903138(VUE3版)、~~④774126647(满)、③816531124(满)、②769925425(满)、①284271917(满)~~
 
 Vue3版前端（Beta版）
 -----------------------------------
@@ -65,18 +61,6 @@ Vue3版前端（Beta版）
 - VUE3版演示：[http://boot3.jeecg.com](http://boot3.jeecg.com)
 - 源码下载：https://github.com/jeecgboot/jeecgboot-vue3
 - 开发文档：http://vue3.jeecg.com/2398845
-
-
-交流互动
------------------------------------
-
-- QQ交流群 ： ⑤860162132、④774126647(满)、③816531124(满)、②769925425(满)、①284271917(满)
-
-- 反馈问题：  [反馈问题，请按格式发Issues](https://github.com/zhangdaiscott/jeecg-boot/issues/new)
-
-- 参与开源：  [欢迎加入JEECG开源团队，共同进步！！](http://www.jeecg.com/doc/join)
-
-- Online一分钟：  [1分钟快速学习](https://my.oschina.net/jeecg/blog/3083313)
 
 
 为什么选择JEECG-BOOT?
@@ -145,7 +129,7 @@ Vue3版前端（Beta版）
 
 #### 后端
 
-- 基础框架：Spring Boot 2.3.5.RELEASE
+- 基础框架：Spring Boot 2.3.5.RELEASE、Jdk8+ (小于11)
 
 - 微服务框架： Spring Cloud Alibaba 2.2.3.RELEASE
 
@@ -385,59 +369,6 @@ Vue3版前端（Beta版）
 
 
 
-后台开发环境和依赖
-----
-- java
-- maven
-- jdk8
-- mysql
-- redis
-- 数据库脚本：jeecg-boot/db/jeecgboot-mysql-5.7.sql
-- 默认登录账号： admin/123456
-
-
-前端开发环境和依赖
-----
-- node
-- yarn
-- webpack
-- eslint
-- @vue/cli 3.2.1
-- [ant-design-vue](https://github.com/vueComponent/ant-design-vue) - Ant Design Of Vue 实现
-- [vue-cropper](https://github.com/xyxiao001/vue-cropper) - 头像裁剪组件
-- [@antv/g2](https://antv.alipay.com/zh-cn/index.html) - Alipay AntV 数据可视化图表
-- [Viser-vue](https://viserjs.github.io/docs.html#/viser/guide/installation)  - antv/g2 封装实现
-- [jeecg-boot-angular 版本](https://gitee.com/dangzhenghui/jeecg-boot)
-
-项目下载和运行
-----
-
-- 拉取项目代码
-```bash
-git clone https://github.com/zhangdaiscott/jeecg-boot.git
-cd  jeecg-boot/ant-design-vue-jeecg
-```
-
-1. 安装node.js
-2. 切换到ant-design-vue-jeecg文件夹下
-```
-# 安装yarn
-npm install -g yarn
-
-# 下载依赖
-yarn install
-
-# 启动
-yarn run serve
-
-# 编译项目
-yarn run build
-
-# Lints and fixes files
-yarn run lint
-```
-
-
 
 
 系统效果
@@ -483,54 +414,6 @@ yarn run lint
 ![](https://oscimg.oschina.net/oscnet/d78218803a9e856a0aa82b45efc49849a0c.jpg)
 ![](https://oscimg.oschina.net/oscnet/0404054d9a12647ef6f82cf9cfb80a5ac02.jpg)
 ![](https://oscimg.oschina.net/oscnet/59c23b230f52384e588ee16309b44fa20de.jpg)
-
-
-其他说明
-----
-
-- 项目使用的 [vue-cli3](https://cli.vuejs.org/guide/), 请更新您的 cli
-
-- 关闭 Eslint (不推荐) 移除 `package.json` 中 `eslintConfig` 整个节点代码
-
-- 修改 Ant Design 配色，在文件 `vue.config.js` 中，其他 less 变量覆盖参考 [ant design](https://ant.design/docs/react/customize-theme-cn) 官方说明
-```ecmascript 6
-  css: {
-    loaderOptions: {
-      less: {
-        modifyVars: {
-          /* less 变量覆盖，用于自定义 ant design 主题 */
-
-          'primary-color': '#F5222D',
-          'link-color': '#F5222D',
-          'border-radius-base': '4px',
-        },
-        javascriptEnabled: true,
-      }
-    }
-  }
-```
-
-
-
-附属文档
-----
-- [Ant Design Vue](https://www.antdv.com/docs/vue/introduce-cn)
-
-- [报表 viser-vue](https://viserjs.github.io/demo.html#/viser/line/basic-line)
-
-- [Vue](https://cn.vuejs.org/v2/guide)
-
-- [路由/菜单说明](https://gitee.com/jeecg/jeecg-boot/tree/v1.1/ant-design-vue-jeecg/src/router/README.md)
-
-- [ANTD 默认配置项](https://gitee.com/jeecg/jeecg-boot/blob/v1.1/ant-design-vue-jeecg/src/defaultSettings.js)
-
-- 其他待补充...
-
-
-备注
-----
-
-> @vue/cli 升级后，eslint 规则更新了。由于影响到全部 .vue 文件，需要逐个验证。既暂时关闭部分原本不验证的规则，后期维护时，在逐步修正这些 rules
 
 
 ## 捐赠 
