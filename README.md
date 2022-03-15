@@ -115,22 +115,22 @@ Vue3版前端（Beta版）
 -----------------------------------
 #### 开发环境
 
-- 语言：Java 8
+- 语言：Java 8+ (小于11)
 
-- IDE(JAVA)： IDEA / Eclipse安装lombok插件 
+- IDE(JAVA)： IDEA (必须安装lombok插件 )
 
-- IDE(前端)： WebStorm 或者 IDEA
+- IDE(前端)： IDEA 或者 WebStorm
 
 - 依赖管理：Maven
 
 - 缓存：Redis
 
-- 数据库脚本：MySQL5.7+  &  Oracle 11g & Sqlserver2017（默认只提供这三个库脚本，其他库需要自己转）
+- 数据库脚本：MySQL5.7+  &  Oracle 11g & Sqlserver2017（默认只提供三个库脚本，其他库需要自己转）
 
 
 #### 后端
 
-- 基础框架：Spring Boot 2.3.5.RELEASE、Jdk8+ (小于11)
+- 基础框架：Spring Boot 2.3.5.RELEASE
 
 - 微服务框架： Spring Cloud Alibaba 2.2.3.RELEASE
 
@@ -143,8 +143,6 @@ Vue3版前端（Beta版）
 - 微服务技术栈：Spring Cloud Alibaba、Nacos、Gateway、Sentinel、Skywalking
 
 - 数据库连接池：阿里巴巴Druid 1.1.22
-
-- 缓存框架：redis
 
 - 日志打印：logback
 
@@ -161,7 +159,7 @@ Vue3版前端（Beta版）
 - [@antv/g2](https://antv.alipay.com/zh-cn/index.html) - Alipay AntV 数据可视化图表
 - [Viser-vue](https://viserjs.github.io/docs.html#/viser/guide/installation)  - antv/g2 封装实现
 - eslint，[@vue/cli 3.2.1](https://cli.vuejs.org/zh/guide)
-- vue-print-nb - 打印
+- vue-print-nb-jeecg - 打印
 
 
 #### 支持库
